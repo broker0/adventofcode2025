@@ -17,8 +17,7 @@ with open('day03.txt', 'rt') as fl:
     dozen_charge = 0
 
     for line in fl:
-        line = line.strip()
-        charges = [c for c in line]
+        charges = line.strip()
 
         pair_charge += get_max_charges(charges, 2)
         dozen_charge += get_max_charges(charges, 12)
